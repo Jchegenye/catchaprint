@@ -6,8 +6,7 @@
   "scripts": {
     "build": "webpack --mode development",
     "dist": "webpack --mode production",
-    "watch": "webpack --watch --mode development",
-    "start": "node server.js"
+    "watch": "webpack --watch --mode development"
   },
   "author": "Jackson Chegenye",
   "devDependencies": {
