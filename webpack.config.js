@@ -117,5 +117,5 @@ module.exports = {
             // enable the css minification plugin
             new OptimizeCSSAssetsPlugin({})
         ]
-    }
+    },
 };
