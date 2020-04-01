@@ -1,0 +1,26 @@
+// Load Google fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+// Guttenberg and Block Editor Styles (columns, etc)
+@import '../../../../../../wp-includes/css/dist/block-library/style.css';
+
+// Mixins
+@import './mixins';
+
+// Variables
+@import './variables';
+
+// Layouts
+@import './partials/layouts';
+
+// SibeBar
+@import './partials/sidebar';
+
+// Header Component
+@import './partials/header';
+
+// Footer Component
+@import './partials/footer';
+
+// Media Queries
+@import './mediaqueries';

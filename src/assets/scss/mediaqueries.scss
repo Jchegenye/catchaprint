@@ -1,0 +1,55 @@
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    .content .title h4{
+        width: 85%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .content {
+        width: 85%;
+    }
+    .content .title h4 {
+        font-size: 115px;
+    }
+}
+@media (max-width: 991px) {
+    .content .title h4 {
+        font-size: 50px;
+    }
+    #app .ml-5{
+        margin-left: 1.5rem !important;
+    }
+    #app .mr-5{
+        margin-right: 1.5rem !important;
+    }
+    #app .mt-5{
+        margin-top: 1.5rem !important;
+    }
+    #app .mb-5 {
+        margin-bottom: 1.5rem !important;
+    }
+    .landing-header-footer {
+        bottom: 1rem;
+    }
+    .custom-select, .form-control {
+        height: inherit !important;
+    }
+    .content select{
+        padding: 0.1rem 0rem 0.1rem 0.9rem;
+        font-size: 0.8rem;
+    }
+    .content button {
+        padding-right: 0.6rem;
+    }
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 480px) {
+    .content .title h4 {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,399 @@
+    // General layouts
+    html,
+    body {
+        font-family: 'Montserrat', sans-serif !important;
+        background-color: $white;
+        font-weight: 200;
+        margin: 0;
+        color: $blackish !important;
+    }
+    a {
+        color: inherit !important;
+        cursor: pointer;
+    }
+    a:hover {
+        color: $darkGray !important;
+        text-decoration: none !important;
+    }
+    button:focus{
+        outline: none;
+    }
+    small{
+        font-weight: 200 !important;
+    }
+    .border-top-2{
+        border-top: 5px solid !important;
+    }
+    .secondary-color{
+        color: $baraka-teal !important;
+    }
+    .border-bottom-1{
+        border-bottom: 1px solid #dee2e6;
+    }
+    #landing{
+        background: url(http://catchaprint.test/wp-content/uploads/2020/03/pattern.png);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        color: $white;
+        background-color: $transparentBlack;
+    }
+    #landing img.bg{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+    }
+    #landing .content {
+        text-align: left;
+        width: 50%;
+    }
+    #landing .content .title p{
+        font-weight: 300;
+    }
+    #landing .content .input-group{
+        margin-top: 2rem;
+    }
+    #landing .content .title h4 {
+        font-weight: 900;
+        font-size: 130px;
+        line-height: 0.8;
+    }
+    // .content select option {
+    //     font-family: "Montserrat", "Font Awesome 5 Free";
+    // }
+    #landing .content input {
+        border-right: 0;
+        border-left: 0;
+        background-color: $transparentWhite;
+    }
+    #landing .content select {
+        border-right: none;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        padding: 0.2rem 1.5rem 0.2rem 1.5rem;
+        // border-top-left-radius: 35px;
+        // border-bottom-left-radius: 35px;
+        cursor: pointer;
+        background-color: $transparentWhite;
+    }
+    #landing .content button {
+        border: 1px solid $lightGray;
+        border-left: 0;
+        border-top-right-radius: 35px;
+        border-bottom-right-radius: 35px;
+        padding-right: 1.2rem;    
+        background-color: $transparentWhite;
+    }
+    #explore .custom-select,
+    #explore .form-control {
+        height: calc(2.5em + 0.75rem + 2px) !important;
+    }
+    #explore .btn.focus,
+    #explore .btn:focus,
+    #explore .custom-select:focus,
+    #explore .form-control:focus {
+        background-color: $white !important;
+        border-color: $lightGray !important;
+        outline: 0 !important;
+        box-shadow: 0 0 1px 0rem $darkGray !important;
+    }
+    .full-height {
+        height: 70vh;
+    }
+    .logo {
+        width: 50px;
+    }
+    .landing-header-footer {
+        position: fixed;
+        /* left: 50%; */
+        bottom: 20px;
+        /* transform: translate(-50%, -50%); */
+        margin: 0 auto;
+    }
+    .landing-header .links > a {
+        align-items: center;
+        display: inline-flex;
+    }
+    .landing-header .links > a svg {
+        font-size: 2rem;
+    }
+    .content .btn img.emoji {
+        font-size: 1.5rem;
+        vertical-align: -0.4em !important;
+        margin: inherit !important;
+    }
+    .flex-center {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .position-ref {
+        position: relative;
+    }
+    .links > a {
+        color: $darkGray;
+        padding: 0 25px;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        line-height: normal;
+    }
+    .links svg {
+        margin-right: 0.7rem;
+    }
+    .m-b-md {
+        margin-bottom: 30px;
+    }
+
+    /*-------------------------------*/
+    /*           Wrappers            */
+    /*-------------------------------*/
+    #wrapper .card-columns{
+        padding: 0px 0px 80px 0px;
+    }
+    #wrapper .card img{
+        // height: 300px;
+        object-fit: cover;
+    }
+    #wrapper .card {
+        background-clip: border-box;
+        border-radius: .25rem;
+        border: 0;
+    }
+    #wrapper .card .card-sub-footer{
+        position: absolute;
+        bottom: 10px;
+        cursor: pointer;
+        left: 10px;
+        right: 10px;
+    }
+    #wrapper .card .card-sub-footer .zoom1{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    .modal-body .zoom2{
+        position: absolute;
+        color: $white !important;
+        left: 0;
+        right: 0;
+        padding: 15px;
+        font-size: 1.5rem;
+    }
+    #wrapper .card .card-sub-footer .social svg{
+        margin: 5px;
+        cursor: pointer;
+    }
+    #wrapper .card-footer{
+        /* background-color: transparent; */
+        border-top: 0px;
+        display: inline-block;
+        width: 100%;
+    }
+    #wrapper .card-img-overlay{
+        background-color: $overLayDark;
+        opacity: .6;
+    }
+    #wrapper .card-img-overlay:hover,
+    #wrapper .card-img-overlay:focus{
+        background-color: transparent;
+    }
+    #wrapper .card-img-overlay:hover,
+    #wrapper .card-img-overlay:focus{
+        cursor: zoom-in;
+        opacity:inherit;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+    #wrapper .card-footer .badge-dark{
+        background-color: transparent;
+        color: $darkGray;
+        border: 1px solid $lightGray;
+    }
+    #wrapper .right-draw{
+        display: inline-flex;
+        align-items: center;
+    }
+    #wrapper .inner-title{
+        // font-weight: 100;
+        font-size: 3rem;
+    }
+    #wrapper .right-draw .input-group-text{
+        background-color: transparent;
+    }
+    #wrapper .right-draw .form-control {
+        border: 0px solid;
+        border-bottom: 1px solid #ced4da;
+        border-top: 1px solid #ced4da;
+        border-left: 1px solid #ced4da;
+    }
+    #wrapper .right-draw .count {
+        color: #fff;
+        background-color: #009688;
+        padding: .25em .4em;
+        font-size: 75%;
+        font-weight: 700;
+        line-height: 1;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        border-radius: .50rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        margin-bottom: 0rem;
+        position: absolute;
+        margin-top: -5px;
+        margin-left: -5px;
+        z-index: 1;
+    }
+    #wrapper .custom-select, .form-control {
+        height: inherit !important;
+    }
+    #otherpages,
+    #wrapper .card-group{
+        margin-right: 48px;
+        margin-bottom: 50px;
+    }
+    .modal .modal-body button,
+    #wrapper .card .social button{
+        background: transparent;
+        border: 0;
+        color: inherit;
+        line-height: 1;
+    }
+    #wrapper .card .social button:focus {
+        border: 1px solid $white !important;
+        outline: none;
+        width: 32px;
+        height: 32px;
+        font-size: 75%;
+        padding: 4px;
+        line-height: 32px;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        border-radius: 50%;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+     .modal .modal-body{
+        padding: 0rem;
+    }
+
+    .modal-body .img-box{
+        background-color: #000000de;
+    }
+    .modal-body .content-box{
+        background-color: $white;
+        height: 100%;
+        width: 100%;
+        padding: 35px;
+    }
+
+    /*When the modal fills the screen it has an even 2.5% on top and bottom*/
+    /*Centers the modal*/
+    .modal-dialog {
+        max-width: calc(90% - 3.5rem) !important;
+    }
+    
+    /*Sets the maximum height of the entire modal to 95% of the screen height*/
+    .modal-content {
+        max-height: 95vh;
+        border-radius: 0 !important;
+        background-color: transparent !important;
+    }
+    
+    /*Sets the maximum height of the modal body to 90% of the screen height*/
+    .modal-body {
+        max-height: 90vh;
+    }
+    /*Sets the maximum height of the modal image to 69% of the screen height*/
+    .modal-body img {
+        max-height: 65vh;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .modal-close{
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 10px;
+    }
+
+    .modal .header-content{
+        height: 50%;
+    }
+    .modal .footer-content{
+        position: absolute;
+        bottom: 0;
+        padding: 15px 35px 35px 35px;
+        right: 0;
+        width: 100%;
+    }
+    .modal .footer-content .actions{
+        border-color: #d1d1d1;
+        padding: 5px 10px;
+        margin-right: 15px;
+        width: 100%;
+        font-size: 14px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        box-shadow: 3px 3px 3px rgba(0,0,0,.04);
+        transition: all .1s ease-in-out;
+        text-align: center;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        color: #767676 !important;
+    }
+
+    // Extra
+    .submodal .modal-body .img-box {
+        background-color: #ffffff;
+    }
+    .submodal.modal{ 
+        background-color: #fff;
+    }
+    .submodal .modal-content{
+        border: 0;
+        max-height: 100vh;
+    }
+    .submodal .modal-body img{
+        max-height: 84vh;
+    }
+
+    // Products
+    #otherpages .table td, 
+    #otherpages .table th {
+        vertical-align: unset;
+    }
+    #otherpages .b-form-spinbutton.form-control{
+        padding: 5px !important;
+    }
+    #otherpages .place{
+        background-color: #439788;
+
+    }
+    #otherpages .place a small{
+        font-weight: 600 !important;
+        font-size: 1rem;
+    }
+    #otherpages .order button{
+        background-color: #000;
+        color: #fff;
+        border-radius: 0;
+        padding: 10px 15px;
+        line-height: normal;
+    }
